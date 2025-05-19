@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-accent: 'PressStart2P';
+    --font-main: 'Inter-Variable';
+    --color-bg: ;
+    --color-text: #000;
+    --color-title: ;
+    --color-selection-title: ;
+    --color-theme-menu: ;
+    --color-decor-rec: ;
+    --accent-color: ;
+    --accent-color-text: ;
+    --accent-color-hover: ;
+    --bg-image: url(../svg/background-d.svg);
+    --font-title-w: 700;
+    --font-main-w: 400;
+    --svg-like: M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z;
+  }
