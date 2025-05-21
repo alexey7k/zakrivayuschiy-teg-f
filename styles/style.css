@@ -18,7 +18,7 @@
   background-color: var(--color-bg, #fff);
   font-family: var(--font-main, sans-serif);
   font-size: 18px;
-  font-weight: 400;
+  font-variation-settings: 'wght' var(--font-main-w);
   background-image:
     repeating-linear-gradient(0deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), 
     repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
@@ -26,12 +26,6 @@
   background-size: cover;
   background-attachment: fixed;
   margin: 0 clamp(0rem, -8.18rem + 34.807vw, 23.125rem) 0;
-}
-
-@supports(font-variation-settings: normal) {
-  .page {
-    font-weight: var(--font-main-w);
-  }
 }
 
 /* --- титульная карточка --- */
@@ -161,7 +155,6 @@
 .card__icon-button {
   display: flex;
   block-size: 38px;
-  border: none;
   background-color: inherit;
   padding: 0;
   border: 2px solid transparent;
@@ -320,19 +313,6 @@
 }
 
 /* --- диалоговое окно с кнопкой ОК --- */
-
-.dialog__popup {
-  transition: opacity 1s;
-  opacity: 0;
-
-  &[open] {
-    opacity: 1;
-    
-    @starting-style {
-      opacity: 0;
-    }
-  }
-}
 
 .dialog__popup[open] {
   position: fixed;
