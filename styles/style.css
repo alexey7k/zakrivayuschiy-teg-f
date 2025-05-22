@@ -90,6 +90,7 @@
 
 .card__title {
   font-size: inherit;
+  font-variation-settings: 'wght' var(--font-title-w);
   padding: 4.1px 10px;
   margin-block-start: 0;
   margin-block-end: 0;
