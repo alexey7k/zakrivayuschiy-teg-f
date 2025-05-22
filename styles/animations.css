@@ -1,6 +1,6 @@
 /* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like */
 
-@keyframes heart-scale {
+@keyframes scale {
     from {
       transform: scale(1);
     }
@@ -10,7 +10,7 @@
     }
   }
   
-  @keyframes heart-sparks {
+  @keyframes appearance {
     from {
       opacity: 0;
     }
