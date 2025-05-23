@@ -13,6 +13,7 @@
 
 .page {
   min-inline-size: 320px;
+  max-inline-size: 700px;
   min-block-size: 100dvb;
   color: var(--color-text, #000);
   background-color: var(--color-bg, #fff);
@@ -25,7 +26,7 @@
     linear-gradient(#E7E7E7 0.01%, #1A1A1A);
   background-size: cover;
   background-attachment: fixed;
-  margin: 0 clamp(0rem, -8.18rem + 34.807vw, 23.125rem) 0;
+  margin: 0 auto;
 }
 
 /* --- титульная карточка --- */
@@ -43,7 +44,6 @@
   text-align: center;
   font-family: var(--font-accent, sans-serif);
   text-transform: uppercase;
-  max-inline-size: 700px;
 }
 
 .header__title {
@@ -164,6 +164,7 @@
   border: 2px solid transparent;
   appearance: none;
   cursor: pointer;
+  transition: border 0.3s linear;
 }
 
 .card__icon-button:focus {
@@ -172,7 +173,7 @@
 
 .card__icon-button:focus-visible {
   border: var(--border, 2px solid #000);
-  transition: 0.3s ease;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:hover {
@@ -260,12 +261,15 @@
   overflow: hidden;
   cursor: pointer;
   appearance: none;
-  outline: 2px solid transparent;
-  transition: outline 0.3s linear;
+  box-shadow: 2px 2px 0 0 transparent;
+  transition: box-shadow 0.3s linear;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:focus-visible {
-  outline: none;
   box-shadow: 2px 2px 0 0 var(--color-accent);
   transition: box-shadow 0.3s ease;
 }
@@ -425,7 +429,7 @@
     height: 21px;
   }
 
-  .dialog__popup[open] {
+  .dialog__popup {
     padding: 30px;
   }
 
